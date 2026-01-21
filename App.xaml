@@ -1,0 +1,12 @@
+﻿<Application x:Class="SteamAccountManager.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SteamAccountManager"
+             xmlns:converters="clr-namespace:SteamAccountManager.Converters"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <converters:PasswordVisibilityConverter x:Key="PasswordVisibilityConverter"/>
+        <converters:ResultConverter x:Key="ResultConverter"/>
+        <converters:ResultColorConverter x:Key="ResultColorConverter"/>
+    </Application.Resources>
+</Application>
